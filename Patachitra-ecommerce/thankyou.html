@@ -1,0 +1,67 @@
+<!-- thankyou.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - Pattachitra</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thankyou-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      text-align: center;
+      padding: 2rem;
+      color: var(--light);
+    }
+
+    .thankyou-container h1 {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .thankyou-container p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .confetti {
+      font-size: 3rem;
+      animation: pop 1s infinite alternate ease-in-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.1); opacity: 1; }
+    }
+
+    .thankyou-container .btn {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🖌️ Pattachitra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+    </nav>
+  </header>
+
+  <main class="thankyou-container">
+    <div class="confetti">🎉</div>
+    <h1>Thank You!</h1>
+    <p>Your order has been placed successfully. We truly appreciate your support for local artisans and Indian heritage. 🙏</p>
+    <a href="products.html" class="btn">Continue Shopping</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pattachitra Store | Crafted with ❤️ for Hackfest</p>
+  </footer>
+</body>
+</html>
